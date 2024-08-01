@@ -1,0 +1,1896 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    color:white;
+    border:none;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+body{
+    background-image:url("space.png");
+}
+
+.heading{
+    position:absolute;
+    left:40%;
+}
+
+
+.orbitron{
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-size:2rem;
+  font-weight: 900;
+  font-style: normal;
+  display:inline;
+}
+
+.fade-in{
+    animation:fadeInAnimation 4s ease forwards 0s ;
+}
+
+/*Navbar*/
+
+#title{
+    font-size:2.5rem;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    height:6rem;
+    width:100%;
+}
+
+.nav-title{
+    display:flex;
+    align-items:center;
+}
+
+.nav-title i{
+    margin-right:10px;
+    font-size:2rem;
+    color:#FE4A00;
+}
+
+.nav-planets{
+    display:flex;
+    flex-grow:0.75;
+    position:relative;
+}
+
+.planet{
+    display:flex;
+    justify-content: space-evenly;
+    width:100%;
+}
+
+.Menu{
+    background:black;
+    height:90vh;
+    width:450px;
+    padding:40px;
+    border-radius:10px;
+    float:right;
+    display:none;
+}
+
+
+.Menu ul li{
+    margin-top:20px;
+    width:130px;
+    font-size:30px;
+    font-weight: 600;
+    list-style: none;
+    margin-bottom:200px;
+    border-radius: 5px;
+    transition:all 0.5s ease;
+    text-align: center;
+}
+
+.Menu ul li:hover{
+    color:blue;
+    background:#fff;
+    text-decoration:underline;
+}
+
+
+/*hero-section*/
+
+.hero{
+    display:flex;
+    justify-content:center;
+    height:955px;
+    width:100%;
+    position:relative;
+}
+
+.intro{
+    height:594px;
+    width:961px;
+    margin-top:150px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.photo1{
+    position:absolute;
+    left:0px;
+}
+
+.intro h1{
+    font-size:5rem;
+    max-width:100%;
+    word-spacing:1.8rem;
+    text-align:center;
+}
+
+.intro p{
+    text-align:center;
+    line-height:1.5rem;
+    margin-top:1.5rem;
+}
+
+.intro button{
+    padding:1.75rem;
+    background:linear-gradient(45deg, #3000F2,#E20025);
+    cursor:pointer;
+    margin-top:2rem;
+    font-weight:900;
+    border-radius:10px;
+}
+
+.photo2{
+    position:absolute;
+    left:0px;
+    top:270px;
+}
+
+.photo3{
+    position:absolute;
+    left:0px;
+    top:800px;
+}
+
+.photo4{
+    position:absolute;
+    display:inline;
+    bottom:0px;
+}
+
+.photo5{
+    position:absolute;
+    display:inline;
+    right:0px;
+    bottom:0px;
+}
+
+.photo6{
+    position:absolute;
+    bottom:32rem;
+    right:0px;
+}
+
+/*SUN*/
+
+.Sun{
+    width:100%;
+    height:1024px;
+    position:relative;
+}
+
+.sun-img{
+    background-image:url("Ellipse\ 1.png");
+    background-size:cover;
+    width:100%;
+}
+
+.sun-img img{
+    width:100%;
+}
+
+.sun-info{
+    position:absolute;
+    height:392px;
+    width:60%;
+    margin-left:10%;
+    bottom:5%;
+}
+
+.sun-intro p{
+    margin-top:2rem;
+    line-height:1.5rem;
+}
+
+.sun-props{
+    height:176px;
+    width:100%;
+    margin-top:1.5rem;
+    display:flex;
+    justify-content:space-between;
+}
+
+.sun-diameter{
+    height:170px;
+    width:47%;
+    border:4px solid #3A0D45;
+    border-radius:16px;
+    padding:24px 40px 24px 40px;
+    background:linear-gradient(-20deg,#430E49,#370D44,#170B36,#100A33);
+    display:flex;
+    justify-content:space-evenly;
+}
+
+.sun-diameter i{
+    padding-top:2rem;
+    font-size:4rem;
+    margin-right:1.5rem;
+}
+
+.sun-diameter-info h3{
+    margin-bottom:1rem;
+    font-size:1rem;
+
+}
+
+.sun-temperature{
+    height:170px;
+    width:47%;
+    border:4px solid #3A0D45;
+    border-radius:16px;
+    padding:24px 40px 24px 40px;
+    background:linear-gradient(-20deg,#430E49,#370D44,#170B36,#100A33);
+    display:flex;
+    justify-content:space-evenly;
+}
+
+.sun-temperature i{
+    padding-top:2rem;
+    font-size:4rem;
+    color:#FE3B00;
+}
+
+.sun-temperature h3{
+    margin-bottom:1rem;
+    font-size:1rem;
+}
+
+/*MERCURY*/
+
+.Mercury{
+    margin-top:10rem;
+    display:flex;
+    position:relative;
+    width:100%;
+    height:766px;
+    gap:40px;
+}
+
+.Mercury img{
+    position:absolute;
+    width:50%;
+    height:auto;
+    top:0px;
+}
+
+.mercury-info{
+    position:absolute;
+    height:608px;
+    width:50%;
+    right:0px;
+    top:10%;
+}
+
+.mercury-intro p{
+    margin-top:2rem;
+    line-height:1.5rem;
+}
+
+.mercury-props{
+    height:392px;
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    gap:2rem;
+    margin-top:1.5rem;
+}
+
+.mercury-diameter{
+    height:176px;
+    width:47%;
+    border-radius:16px;
+    border:4px solid #3A0D45;
+    padding:24px 40px 24px 40px;
+    background:linear-gradient(-20deg,#430E49,#370D44,#170B36,#100A33);
+    display:flex;
+    justify-content:space-evenly;
+}
+
+.mercury-diameter i{
+    padding-top:2rem;
+    font-size:4rem;
+    margin-right:1.5rem;
+}
+
+.mercury-diameter-info h3{
+    margin-bottom:1rem;
+    font-size:1rem;
+
+}
+
+.day-temperature{
+    height:176px;
+    width:47%;
+    border-radius:16px;
+    border:4px solid #3A0D45;
+    padding:24px 40px 24px 40px;
+    background:linear-gradient(-20deg,#430E49,#370D44,#170B36,#100A33);
+    display:flex;
+    justify-content:space-evenly;
+    
+}
+
+.day-temperature i{
+    padding-top:2rem;
+    font-size:4rem;
+    color:#FE3B00;
+}
+
+.day-temperature-info h3{
+    margin-bottom:1rem;
+    font-size:1rem;
+}
+
+.night-temperature{
+    height:176px;
+    width:47%;
+    border-radius:16px;
+    border:4px solid #3A0D45;
+    padding:24px 40px 24px 40px;
+    background:linear-gradient(-20deg,#430E49,#370D44,#170B36,#100A33);
+    display:flex;
+    justify-content:space-evenly;
+}
+
+.night-temperature i{
+    padding-top:2rem;
+    font-size:4rem;
+    color:#FE3B00;
+}
+
+.night-temperature-info h3{
+    margin-bottom:1rem;
+    font-size:1rem;
+}
+
+/*VENUS*/
+
+.Venus{
+    height:785px;
+    width:100%;
+    margin-bottom:8rem;
+    padding-top:4rem;
+    position:relative;
+}
+
+.venus-img img{
+    position:absolute;
+    width:40%;
+    right:0px;
+    bottom:0px;
+}
+
+.venus-info{
+    height:624px;
+    width:40%;
+    margin-left:4rem;
+    margin-top:8rem;
+}
+
+.venus-props{
+    height:392px;
+    width:100%;
+    margin-top:1.5rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.venus-intro p{
+    margin-top:2rem;
+    line-height:1.5rem;
+}
+
+.venus-diameter{
+    height:176px;
+    width:50%;
+    border-radius:1rem;
+    border:4px solid #3A0D45;
+    padding:24px 40px 24px 40px;
+    background:linear-gradient(-20deg,#430E49,#370D44,#170B36,#100A33);
+    display:flex;
+    justify-content:space-evenly;
+}
+
+.venus-diameter i{
+    padding-top:2rem;
+    font-size:4rem;
+    margin-right:1.5rem;
+}
+
+.venus-diameter-info h3{
+    margin-bottom:1rem;
+    font-size:1rem;
+
+}
+
+.venus-temperature{
+    height:176px;
+    width:50%;
+    border-radius:1rem;
+    border:4px solid #3A0D45;
+    padding:24px 40px 24px 40px;
+    background:linear-gradient(-20deg,#430E49,#370D44,#170B36,#100A33);
+    display:flex;
+    justify-content:space-evenly;
+}
+
+.venus-temperature i{
+    padding-top:2rem;
+    font-size:4rem;
+    color:#FE3B00;
+}
+
+.venus-temperature-info h3{
+    margin-bottom:1rem;
+    font-size:1rem;
+}
+
+/*EARTH*/
+
+.Earth{
+    height:893px;
+    width:100%;
+    position:relative;
+}
+
+.earth-img img{
+    position:absolute;
+    bottom:0;
+    width:84%;
+    left:11%;
+}
+
+.earth-info{
+    height:176px;
+    display:flex;
+    justify-content:space-around;
+
+}
+
+.earth-intro{
+    height:176px;
+    width:45%;
+}
+
+.earth-intro p{
+    margin-top:2rem;
+    line-height:1.5rem;
+}
+
+.earth-diameter{
+    height:176px;
+    width:20%;
+    border-radius:16px;
+    border:4px solid #3A0D45;
+    padding:24px 40px 24px 40px;
+    background:linear-gradient(-20deg,#430E49,#370D44,#170B36,#100A33);
+    display:flex;
+    justify-content:space-evenly;
+}
+
+.earth-diameter i{
+    padding-top:2rem;
+    font-size:4rem;
+    margin-right:1.5rem;
+}
+
+.earth-diameter-info h3{
+    margin-bottom:1rem;
+    font-size:1rem;
+
+}
+
+/*MOON*/
+
+.moon-intro{
+    height:120px;
+    width:44%;
+    margin-top:6%;
+    margin-left:20%;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items:flex-end;
+    padding-left:40px;
+}
+
+.moon-intro p{
+    text-align:center;
+    line-height:1.5rem;
+}
+
+.arrow{
+    position:absolute;
+    right:15rem;
+    top:15rem;
+    width:13%;
+}
+
+/*MARS*/
+
+.Mars{
+    position:relative;
+    width:100%;
+}
+
+.mars-intro{
+    height:120px;
+    width:45%;
+    margin:4rem 0 0 6rem;
+}
+
+.mars-intro p{
+    margin-top:2rem;
+    line-height:1.5rem;
+}
+
+.container{
+    position:relative;
+    width:61%;
+    margin-top:2.5rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.Mars-img{
+    position:absolute;
+    left:0px;
+    bottom:0px;
+}
+
+.down-arrow{
+    position:absolute;
+    right:0px;
+    top:3rem;
+}
+
+.moons{
+    height:144px;
+    width:38%;
+    position:relative;
+    bottom:3rem;
+}
+
+.moons p{
+    margin-top:2rem;
+    line-height:1.5rem;
+}
+
+.mars-props{
+    height:100%;
+    width:24%;
+    position:absolute;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    gap:1.4rem;
+    right:80px;
+    top:0px;
+}
+
+.mars-diameter{
+    height:176px;
+    width:85%;
+    border-radius:16px;
+    border:4px solid #3A0D45;
+    padding:24px 40px 24px 40px;
+    background:linear-gradient(-20deg,#430E49,#370D44,#170B36,#100A33);
+    display:flex;
+    justify-content:space-evenly;
+}
+
+.mars-diameter i{
+    padding-top:2rem;
+    font-size:4rem;
+    margin-right:1.5rem;
+}
+
+.mars-diameter-info h3{
+    margin-bottom:1rem;
+    font-size:1rem;
+}
+
+.mars-day-temperature{
+    height:176px;
+    width:85%;
+    border-radius:16px;
+    border:4px solid #3A0D45;
+    padding:24px 40px 24px 40px;
+    background:linear-gradient(-20deg,#430E49,#370D44,#170B36,#100A33);
+    display:flex;
+    justify-content:space-evenly;
+    
+}
+
+.mars-day-temperature i{
+    padding-top:2rem;
+    font-size:4rem;
+    color:#FE3B00;
+}
+
+.day-temperature-info h3{
+    margin-bottom:1rem;
+    font-size:1rem;
+}
+
+.mars-night-temperature{
+    height:176px;
+    width:85%;
+    border-radius:16px;
+    border:4px solid #3A0D45;
+    padding:24px 40px 24px 40px;
+    background:linear-gradient(-20deg,#430E49,#370D44,#170B36,#100A33);
+    display:flex;
+    justify-content:space-evenly;
+}
+
+.mars-night-temperature i{
+    padding-top:2rem;
+    font-size:4rem;
+    color:#FE3B00;
+}
+
+.night-temperature-info h3{
+    margin-bottom:1rem;
+    font-size:1rem;
+}
+
+/*JUPITER*/
+
+.Jupiter{
+    height:785px;
+    width:100%;
+    padding-top:4rem;
+    position:relative;
+}
+
+.Jupiter img{
+    position:absolute;
+    width:52%;
+    right:0px;
+    top:0px;
+    background-image: url("Group 5.png");
+    background-size:cover;
+    background-position:150px -130px;
+    background-repeat: no-repeat;
+}
+
+.jupiter-info{
+    position:relative;
+    left:5%;
+    height:624px;
+    width:40%;
+}
+
+.jupiter-props{
+    height:392px;
+    width:100%;
+    margin-top:1.5rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.jupiter-intro p{
+    margin-top:2rem;
+    line-height:1.5rem;
+}
+
+.jupiter-diameter{
+    height:176px;
+    width:59%;
+    border-radius:1rem;
+    border:4px solid #3A0D45;
+    padding:24px 40px 24px 40px;
+    background:linear-gradient(-20deg,#430E49,#370D44,#170B36,#100A33);
+    display:flex;
+    justify-content:space-evenly;
+}
+
+.jupiter-diameter i{
+    padding-top:2rem;
+    font-size:4rem;
+    margin-right:1.5rem;
+}
+
+.jupiter-diameter-info h3{
+    margin-bottom:1rem;
+    font-size:1rem;
+
+}
+
+.jupiter-temperature{
+    height:176px;
+    width:59%;
+    border-radius:1rem;
+    border:4px solid #3A0D45;
+    padding:24px 40px 24px 40px;
+    background:linear-gradient(-20deg,#430E49,#370D44,#170B36,#100A33);
+    display:flex;
+    justify-content:space-evenly;
+}
+
+.jupiter-temperature i{
+    padding-top:2rem;
+    font-size:4rem;
+    color:#FE3B00;
+}
+
+.jupiter-temperature-info h3{
+    margin-bottom:1rem;
+    font-size:1rem;
+}
+
+/*SATURN*/
+
+.Saturn{
+    height:808px;
+    width:100%;
+    position:relative;
+}
+
+.Saturn img{
+    width:50%;
+    position:absolute;
+    left:0px;
+}
+
+.saturn-info{
+    position:absolute;
+    right:10px;
+    height:80%;
+    width:40%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.saturn-props{
+    height:64%;
+    width:100%;
+    margin-top:1.5rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:flex-start;
+}
+
+.saturn-intro p{
+    margin-top:2rem;
+    line-height:1.5rem;
+}
+
+.saturn-diameter{
+    height:176px;
+    width:60%;
+    border-radius:1rem;
+    border:4px solid #3A0D45;
+    padding:24px 40px 24px 40px;
+    background:linear-gradient(-20deg,#430E49,#370D44,#170B36,#100A33);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.saturn-diameter-info{
+    display:inline-block;
+}
+
+.saturn-diameter i{
+    font-size:4rem;
+    margin-right:1.5rem;
+}
+
+.saturn-diameter-info h3{
+    margin-bottom:1rem;
+    font-size:1rem;
+
+}
+
+.saturn-temperature{
+    height:176px;
+    width:60%;
+    border-radius:1rem;
+    border:4px solid #3A0D45;
+    padding:24px 40px 24px 40px;
+    background:linear-gradient(-20deg,#430E49,#370D44,#170B36,#100A33);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.saturn-temperature i{
+    font-size:4rem;
+    color:#FE3B00;
+}
+
+.saturn-temperature-info h3{
+    margin-bottom:1rem;
+    font-size:1rem;
+}
+
+/* FOR URANUS */
+
+.Uranus{
+    height:819px;
+    width:100%;
+    position:relative;
+}
+
+.uranus-info{
+    display:flex;
+    justify-content:space-evenly;
+    margin-top:5rem;
+}
+
+.uranus-props{
+    width:50%;
+    display:flex;
+    justify-content: space-between;
+}
+
+.uranus-intro{
+    width:35%;
+}
+
+.uranus-intro p{
+    margin-top:2rem;
+    line-height:1.5rem;
+}
+
+.uranus-temperature{
+    height:176px;
+    width:47%;
+    border-radius:1rem;
+    border:4px solid #3A0D45;
+    padding:24px 40px 24px 40px;
+    background:linear-gradient(-20deg,#430E49,#370D44,#170B36,#100A33);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.uranus-temperature i{
+    font-size:4rem;
+    color:#FE3B00;
+}
+
+.uranus-temperature-info h3{
+    margin-bottom:1rem;
+    font-size:1rem;
+}
+
+.uranus-diameter{
+    height:176px;
+    width:47%;
+    border-radius:1rem;
+    border:4px solid #3A0D45;
+    padding:24px 40px 24px 40px;
+    background:linear-gradient(-20deg,#430E49,#370D44,#170B36,#100A33);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.uranus-diameter i{
+    padding-top:2rem;
+    font-size:4rem;
+    margin-right:1.5rem;
+}
+
+.uranus-diameter-info h3{
+    margin-bottom:1rem;
+    font-size:1rem;
+}
+
+.Uranus img{
+    position:absolute;
+    right:0px;
+    bottom:0px;
+    width:94%;
+}
+
+/* NEPTUNE */
+
+.Neptune{
+    width:100%;
+    height:1024px;
+    position:relative;
+}
+
+.neptune-info{
+    width:70%;
+    height:40%;
+    position:absolute;
+    left:15%;
+    margin-top:5rem;
+    text-align:center;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.neptune-intro{
+    width:100%;
+}
+
+.neptune-intro p{
+    margin-top:1.5rem;
+    line-height:1.5rem;
+}
+
+.neptune-props{
+    width:70%;
+    display:flex;
+    justify-content:space-between;
+}
+
+.neptune-diameter{
+    height:176px;
+    width:47%;
+    border-radius:1rem;
+    border:4px solid #3A0D45;
+    padding:24px 40px 24px 40px;
+    background:linear-gradient(-20deg,#430E49,#370D44,#170B36,#100A33);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.neptune-diameter i{
+    padding-top:2rem;
+    font-size:4rem;
+    margin-right:1.5rem;
+}
+
+.neptune-diameter-info h3{
+    margin-bottom:1rem;
+    font-size:1rem;
+}
+
+.neptune-temperature{
+    height:176px;
+    width:47%;
+    border-radius:1rem;
+    border:4px solid #3A0D45;
+    padding:24px 40px 24px 40px;
+    background:linear-gradient(-20deg,#430E49,#370D44,#170B36,#100A33);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.neptune-temperature i{
+    font-size:4rem;
+    color:#FE3B00;
+}
+
+.neptune-temperature-info h3{
+    margin-bottom:1rem;
+    font-size:1rem;
+}
+
+.Neptune img{
+    width:94%;
+    position:absolute;
+    bottom:0px;
+}
+
+footer{
+    position:relative;
+    width:90%;
+    height:448px;
+    background:#1E1E1E;
+    position:absolute;
+    left:5%;
+    border-radius:40px;
+    margin: 1rem 0 1rem 0;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.foot-info{
+    width:55%;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:space-around;
+    gap:2rem;
+}
+
+.foot-intro{
+    width:100%;
+}
+
+.foot-intro p{
+    margin-top:1.5rem;
+    line-height:1.5rem;
+}
+
+.input{
+    position:relative;
+    width:70%;
+    height:72px;
+    background:#ffffff;
+    border-radius:40px;
+    color:black;
+    text-align: left;
+    padding-left:10px;
+    font-weight:545;
+    font-size:1rem;
+    display:flex;
+    align-items: center;
+}
+
+.inputt{
+   font-weight:600;
+   font-size:1rem;
+   width:70%;
+   color:#000000;
+}
+
+.subscribe{
+    position:relative;
+    background:linear-gradient(45deg, #3000F2,#E20025);
+    border-radius:40px;
+    padding-left:0px;
+    width:40%;
+    height:90%;
+    text-align:left;
+}
+
+.subscribe i{
+    position:absolute;
+    right:10px;
+    top:25%;
+    font-size:2rem;
+}
+.navbarr{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    width:90%;
+}
+
+@keyframes fadeInAnimation{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+@media screen and (max-width:1320px) {
+    .photo1,.photo6{
+        display:none;
+    }
+    .photo3{
+        top:10px;
+    }
+    
+}
+
+@media screen and (max-width:1240px) {
+    .photo2{
+        display:none;
+    }
+    .photo4{
+        left:0px;
+    }
+}
+
+@media screen and (max-width:1192px){
+
+
+    .Sun{
+        margin-top:30%;
+    }
+    .sun-info{
+        margin-left:0%;
+        margin-bottom:10%;
+        width:100%;
+        text-align:center;
+    }
+
+    .sun-diameter{
+        width:48%;
+    }
+    
+    .sun-temperature{
+        width:48%;
+    }
+
+    .sun-intro{
+        opacity:0;
+        transition:all 0.5s ease;
+    }
+
+    .sun-props{
+        opacity:0;
+        transition:all 0.5s ease 0.5s;
+    }
+
+    .heading{
+        transition: opacity 0.25s ease;
+    }
+
+    .Sun:hover .sun-intro{
+        opacity:1;
+    }
+
+    .Sun:hover .sun-props{
+        opacity:1;
+    }
+
+    .Sun:hover .heading{
+        opacity:0;
+    }
+
+
+    .planet{
+        display:none;
+    }
+
+    .nav-planets i{
+        position:absolute;
+        right:0px;
+    }
+
+
+    /* FOR SATURN */
+
+    .saturn-info{
+        height:90%;
+        width:50%;
+        opacity:0;
+        transition:all 0.5s ease;
+        text-align: center;
+    }
+
+    .saturn-props{
+        width:100%;
+        justify-content:space-around;
+        align-items:center;
+    }
+
+    .saturn-diameter{
+        width:80%;
+        transition:transform 1s ease-in;
+    }
+
+    .saturn-temperature{
+        width:80%;
+        text-align:center;
+        transition:transform 1s ease-in;
+    }
+
+    .Saturn:hover .saturn-info{
+        opacity:1;
+    }
+
+    .heading{
+        transition: opacity 0.25s ease;
+    }
+
+    .Saturn:hover .heading{
+        opacity:0;
+    }
+
+    .saturn-temperature:hover{
+        transform:scale(1.2);
+    }
+
+    .saturn-diameter:hover{
+        transform:scale(1.2);
+    }
+
+    /* FOR JUPITER */
+
+    .jupiter-info{
+        width:47%;
+        opacity:0;
+        text-align: center;
+    }
+
+    .Jupiter:hover .jupiter-info{
+        opacity:1;
+    }
+
+    .heading{
+        transition: opacity 0.25s ease;
+    }
+
+    .Jupiter:hover .heading{
+        opacity:0;
+    }
+
+    .jupiter-diameter{
+        width:80%;
+    }
+
+    .jupiter-temperature{
+        width:80%;
+    }
+
+    /* FOR MARS */
+
+    .mars-props{
+        position:absolute;
+        width:30%;
+        right:0px;
+        opacity:0;
+        transition:transform 0.5s ease 1.5s,opacity 0.5s ease 1.5s;
+        text-align: center;
+    }
+
+    .Mars:hover .mars-props{
+        opacity:1;
+    }
+
+    .mars-intro{
+        height:120px;
+        width:45%;
+        margin:1rem 0 0 6rem;
+        opacity:0;
+        transition:transform 0.5s ease,opacity 0.5s ease;
+        text-align: center;
+    }
+
+    .Mars:hover .mars-intro{
+        opacity:1;
+        transform:translateY(10%);
+    }
+
+    .heading{
+        transition: opacity 0.25s ease;
+    }
+
+    .Mars:hover .heading{
+        opacity:0;
+    }
+
+    .moons{
+        height:144px;
+        width:38%;
+        left:0px;
+        bottom:3rem;
+        opacity:0;
+        transition:transform 0.5s ease 1s,opacity 0.5s ease 1s;
+        text-align: center;
+    }
+
+    .Mars:hover .moons{
+        opacity:1;
+        transform:translateX(10%);
+    }
+
+    /* FOR EARTH */
+
+    .earth-info{
+        position:absolute;
+        top:0px;
+        opacity:0;
+        transition:transform 0.5s ease, opacity 0.5s ease;
+        text-align:center;
+        justify-content:space-evenly;
+    }
+
+    .Earth:hover .earth-info{
+        opacity:1;
+        transform:translateY(10%);
+    }
+
+    .heading{
+        transition: opacity 0.25s ease;
+    }
+
+    .Earth:hover .heading{
+        opacity:0;
+    }
+
+    .moon-intro{
+        width:44%;
+        height:20%;
+        position:absolute;
+        margin-left:10%;
+        top:30%;
+        opacity:0;
+        transition:transform 0.5s ease 1s, opacity 0.5s ease 1s;
+        text-align:center;
+    }
+
+    .earth-diameter{
+        width:20%;
+    }
+
+    .Earth:hover .moon-intro{
+        opacity:1;
+        transform:translateY(10%);
+    }
+
+    .rocket{
+        position:absolute;
+        top:60%;
+    }
+
+    .arrow{
+        top:40%;
+    }
+
+    /* FOR VENUS */
+
+    .venus-info{
+        position:absolute;
+        margin-top:0%;
+        left:0%;
+        width:80%;
+        opacity:0;
+        transition:transform 0.5s ease,opacity 0.5s ease;
+        text-align: center;
+    }
+
+    .Venus:hover .venus-info{
+        opacity:1;
+    }
+
+    .heading{
+        transition: opacity 0.25s ease;
+    }
+
+    .Venus:hover .heading{
+        opacity:0;
+    }
+
+    .venus-props{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .venus-diameter{
+        width:40%;
+    }
+
+    .venus-temperature{
+        width:40%;
+    }
+
+    /* FOR MERCURY */
+
+   .Mercury img{
+      width:30%;
+    }
+
+    .mercury-info{
+        width:70%;
+        opacity:0;
+        transition:transform 0.5s ease,opacity 0.5s ease;
+        text-align:center;
+    }
+
+    .mercury-props{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .Mercury:hover .mercury-info{
+        opacity:1;
+    }
+
+    .heading{
+        transition: opacity 0.25s ease;
+    }
+
+    .Mercury:hover .heading{
+        opacity:0;
+    }
+
+    .day-temperature{
+        width:40%;
+    }
+
+    .night-temperature{
+        width:40%;
+    }
+
+    .mercury-diameter{
+        width:40%;
+    }
+
+    /* FOR NEPTUNE */
+
+    .neptune-props{
+        width:100%;
+    }
+
+    .neptune-diameter{
+        width:49%;
+    }
+
+    .neptune-temperature{
+        width:49%;
+    }
+
+    .neptune-intro{
+        opacity:0;
+        transition:all 0.5s ease;
+    }
+
+    .neptune-props{
+        opacity:0;
+        transition:all 0.5s ease 0.75s;
+    }
+
+    .heading{
+        transition: opacity 0.25s ease;
+    }
+
+    .Neptune:hover .heading{
+        opacity:0;
+    }
+
+    .Neptune:hover .neptune-intro{
+        opacity:1;
+    }
+
+    .Neptune:hover .neptune-props{
+        opacity:1;
+    }
+
+    /* FOR URANUS */
+
+    .uranus-info{
+        display:flex;
+        justify-content:space-evenly;
+        margin-top:5rem;
+    }
+    
+    .uranus-props{
+        width:55%;
+        display:flex;
+        align-items:center;
+        justify-content: space-evenly;
+    }
+
+    .uranus-diameter{
+        width:45%;
+    }
+
+    .uranus-temperature{
+        width:45%;
+    }
+    
+    .uranus-intro{
+        width:45%;
+    }
+
+    .uranus-intro{
+        opacity:0;
+        transition:all 0.5s ease;
+    }
+
+    .uranus-props{
+        opacity:0;
+        transition:all 0.5s ease 0.5s;
+    }
+
+    .heading{
+        transition: opacity 0.25s ease;
+    }
+
+    .Uranus:hover .heading{
+        opacity:0;
+    }
+
+    .Uranus:hover .uranus-intro{
+        opacity:1;
+    }
+
+    .Uranus:hover .uranus-props{
+        opacity:1;
+    }
+
+
+
+    @media screen and (max-width:1026px) {
+
+        .earth-diameter{
+            width:40%;
+        }
+
+        .uranus-info{
+            margin-top:0;
+        }
+
+        .uranus-props{
+            width:65%;
+            justify-content:space-between;
+        }
+
+        .uranus-intro{
+            width:35%;
+        }
+
+        .uranus-diameter{
+            width:49%;
+        }
+    
+        .uranus-temperature{
+            width:49%;
+        }
+        
+    }
+
+}
+@media screen and (max-width:778px) {
+    .photo5{
+        display:none;
+    }
+
+    .planet{
+        display:none;
+        flex-direction:column;
+        justify-content:space-evenly;
+        background-color:blue;
+        position: absolute;
+        color:black;
+        top:3.2rem;
+        right:0px;
+        padding:40px;
+
+    }
+
+    .nav-planets i{
+        position:absolute;
+        right:0px;
+    }
+
+    .Saturn img{
+        width:40%;
+    }
+
+    .saturn-info{
+        width:60%;
+    }
+
+    .earth-diameter{
+        width:40%;
+    }
+
+
+    .moon-intro{
+        position:absolute;
+        bottom:10%;
+        margin-top:40%;
+        width:80%;
+    }
+
+    .rocket{
+        display:none;
+    }
+
+    .venus-props{
+        display:flex;
+        flex-direction:column;
+        justify-content: space-around;
+        align-items:center;
+    }
+
+    .venus-diameter{
+        width:80%;
+    }
+
+    .venus-temperature{
+        width:80%;
+    }
+
+    .neptune-info{
+        width:100%;
+        left:0;
+    }
+
+    .uranus-info{
+       flex-direction: column;
+       align-items:center;
+        text-align:center;
+    }
+
+    .uranus-props{
+        width:90%;
+    }
+
+    .uranus-intro{
+        width:100%;
+    }
+
+    .Mercury img{
+        width:20%;
+      }
+
+      .mercury-info{
+        width:80%;
+      }
+
+      .Jupiter img{
+        width:40%;
+      }
+
+      .jupiter-info{
+        width:55%;
+        height:100%;
+      }
+
+}
+
+@media screen and (max-width:622px) {
+
+    .sun-props{
+        flex-direction:column;
+        align-items:center;
+        height:100%;
+        justify-content:space-between;
+    }
+    .sun-diameter{
+        width:80%;
+    }
+
+    .sun-temperature{
+        width:80%;
+    }
+
+    .sun-info{
+        transform:translateY(120%);
+        opacity:0;
+        transition:all 0.5s ease;
+    }
+
+    .Sun:hover .sun-info{
+        transform:translateY(-80%);
+        opacity:1;
+    }
+
+    .Saturn img{
+        width:60%;
+        top:0px;
+    }
+
+    .saturn-info{
+        transform:translateY(105%);
+        width:100%;
+        transition:all ease 0.5s;
+    }
+
+    .Saturn:hover .saturn-info{
+        transform:translateY(40%);
+    }
+
+    /* FOR-SATURN */
+    .saturn-props{
+        width:100%;
+        position:relative;
+        left:0px;
+        display:flex;
+        flex-direction:column;
+        justify-content: space-around;
+        align-items:center;
+    }
+
+    .saturn-diameter{
+        width:80%;
+
+    }
+    .saturn-temperature{
+        width:80%;
+        text-align:center;
+    }
+
+    /* FOR JUPITER */
+     
+    .jupiter-info{
+        width:60%;
+        opacity:0;
+        transform:translateY(100%);
+        transition:all ease 0.5s
+    }
+
+    .jupiter-diameter{
+        width:100%;
+        transition:transform 1s ease-in;
+    }
+
+    .jupiter-temperature{
+        width:100%;
+        transition:transform 1s ease-in;
+    }
+
+    .Jupiter:hover .jupiter-info{
+        opacity:1;
+        transform:translateY(0%);
+    }
+
+    .jupiter-temperature:hover{
+        transform:scale(1.1);
+    }
+
+    .jupiter-diameter:hover{
+        transform:scale(1.1);
+    }
+
+    .mercury-info{
+        width:80%;
+        top:0px;
+        height:100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mercury-props{
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+    }
+
+    .day-temperature{
+        width:100%;
+    }
+
+    .night-temperature{
+        width:100%;
+    }
+
+    .mercury-diameter{
+        width:100%;
+    }
+
+    .arrow{
+        display: none;
+    }
+
+    footer{
+        height:80%;
+    }
+
+    .foot-info{
+        width:100%;
+        height:70%;
+    }
+
+    .input{
+        width:100%;
+        border-radius:30px;
+    }
+
+    .subscribe{
+        width:50%;
+    }
+
+    .nav-link{
+        display:none;
+    }
+
+    .neptune-info{
+        height:60%;
+    }
+
+    .neptune-props{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .neptune-diameter{
+        width:70%;
+    }
+
+    .neptune-temperature{
+        width:70%;
+    }
+
+    .neptune-info{
+        opacity:0;
+        transform:translateY(155%);
+        transition:all 1s ease;
+    }
+
+    .Neptune:hover .neptune-info{
+        transform:translateY(10%);
+        opacity:1;
+    }
+
+    .neptune-intro{
+        opacity:1;
+    }
+
+    .neptune-props{
+        opacity:1;
+    }
+
+    .uranus-props{
+        width:90%;
+        flex-direction:column;
+    }
+
+    .uranus-diameter{
+        width:70%;
+    }
+
+    .uranus-temperature{
+        width:70%;
+    }
+
+    .uranus-info{
+        opacity:0;
+        transform:translateY(150%);
+        transition:all 1s ease;
+    }
+
+    .Uranus:hover .uranus-info{
+        transform:translateY(10%);
+        opacity:1;
+    }
+
+    .venus-info{
+        transform:translateY(120%);
+        opacity:0;
+        transition:all 0.5s ease;
+    }
+
+    .Venus:hover .venus-info{
+        opacity:1;
+        transform:translateY(0%);
+    }
+
+    .photo4{
+        display:none;
+    }
+
+}
+
+@media screen and (min-width:1192px) {
+    .nav-planets i{
+        display:none;
+    }
+
+    .heading{
+        display:none;
+    }
+
+    .Mercury img{
+        height:100%;
+    }
+}
